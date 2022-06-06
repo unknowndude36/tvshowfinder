@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: "Kdam Thmor Pro", sans-serif;
+	background-color: #f3f3f3;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 4rem;
+	background-color: #333;
+	color: #f3f3f3;
+}
+
+header form input {
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	border: 1px solid #f3f3f3;
+	font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+header form input:focus {
+	outline: none;
+}
+
+header form button {
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	margin-left: 0.2rem;
+	background-color: #f3f3f3;
+	font-family: "Kdam Thmor Pro", sans-serif;
+	cursor: pointer;
+	border: #333 1px solid;
+	color: #333;
+}
+
+header form button:hover {
+	background-color: #333;
+	border: 1px #f3f3f3 solid;
+	color: #f3f3f3;
+	transform: scale(1.05);
+
+	transition: transform 0.05s ease-in-out;
+}
+
+header form button:active {
+	background-color: #f3f3f3;
+	color: red;
+	transform: scale(0.95);
+}
+
+.container {
+	width: 1000px;
+	max-width: 90%;
+	margin: 1rem auto 0;
+}
+
+#movie-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+#movie-container img {
+	margin-left: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-radius: 5%;
+}
+
+@media (max-width: 770px) {
+	header {
+		flex-direction: column;
+	}
+
+	header input {
+		margin-top: 1rem;
+	}
+
+	header button {
+		display: block;
+		width: 100%;
+		margin: 1rem 0 0;
+		margin-left: 0 !important;
+	}
+}
